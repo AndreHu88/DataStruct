@@ -6,10 +6,40 @@
 //  Copyright © 2018年 hu. All rights reserved.
 //
 
-#include <stdio.h>
+
+#include "LinkList.h"
+#include "DLLinkList.h"
+#include "Stack.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
+    
+    
     printf("Hello, World!\n");
+    printf("单向链表操作\n");
+    char arr[] = {'a','b','c','d','e'};
+    ListNode *list = createLinkList(arr, 5);
+    printLinkList(list);
+    
+    ListNode *listRear = createLinkListRear(arr, 5);
+    printLinkList(listRear);
+    
+    printLinkList(insertElement(listRear, 5, 'f'));
+    printLinkList(amendElement(listRear, 2, 'z'));
+    printLinkList(deleteElement(listRear, 2));
+    
+    printf("双向链表\n");
+    DLNode *head = NULL;
+    head = initDlLinkList(head);
+    printDLLinkList(head);
+    printDLLinkList(insertDLLinkList(head, 6, 'f'));
+    printDLLinkList(deleteDLLinkList(head, 'B'));
+    
+    printf("链式栈\n");
+    linkStack stack = NULL;
+    stack = pushLinkStack(stack, 'a');
+    stack = pushLinkStack(stack, 'b');
+    stack = pushLinkStack(stack, 'c');
+    stack = pushLinkStack(stack, 'd');
+    popLinkStack(stack);
     return 0;
 }
