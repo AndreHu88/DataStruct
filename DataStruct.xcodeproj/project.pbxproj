@@ -13,6 +13,7 @@
 		3EFFD48020CCEC26003AA7C7 /* DLLinkList.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EFFD47F20CCEC26003AA7C7 /* DLLinkList.c */; };
 		3EFFD48320CCF5A3003AA7C7 /* Stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EFFD48220CCF5A3003AA7C7 /* Stack.c */; };
 		3EFFD48620CD0230003AA7C7 /* Queue.c in Sources */ = {isa = PBXBuildFile; fileRef = 3EFFD48520CD0230003AA7C7 /* Queue.c */; };
+		B546913120E481400051571C /* Tree.c in Sources */ = {isa = PBXBuildFile; fileRef = B546913020E481400051571C /* Tree.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,8 @@
 		3EFFD48220CCF5A3003AA7C7 /* Stack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Stack.c; sourceTree = "<group>"; };
 		3EFFD48420CD0230003AA7C7 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		3EFFD48520CD0230003AA7C7 /* Queue.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Queue.c; sourceTree = "<group>"; };
+		B546912F20E481400051571C /* Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
+		B546913020E481400051571C /* Tree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Tree.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +84,13 @@
 				3EFFD48220CCF5A3003AA7C7 /* Stack.c */,
 				3EFFD48420CD0230003AA7C7 /* Queue.h */,
 				3EFFD48520CD0230003AA7C7 /* Queue.c */,
+<<<<<<< HEAD
 				3E60088920DF84C50090EFD3 /* BinaryTree.h */,
 				3E60088A20DF84C50090EFD3 /* BinaryTree.c */,
+=======
+				B546912F20E481400051571C /* Tree.h */,
+				B546913020E481400051571C /* Tree.c */,
+>>>>>>> c74644078149aac1a6b6c63057a199ff9c83c3c6
 			);
 			path = DataStruct;
 			sourceTree = "<group>";
@@ -144,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EFFD48620CD0230003AA7C7 /* Queue.c in Sources */,
+				B546913120E481400051571C /* Tree.c in Sources */,
 				3EFFD47520CBF1A4003AA7C7 /* main.c in Sources */,
 				3E60088B20DF84C50090EFD3 /* BinaryTree.c in Sources */,
 				3EFFD47D20CBF1C4003AA7C7 /* LinkList.c in Sources */,
