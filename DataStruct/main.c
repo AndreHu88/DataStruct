@@ -10,6 +10,7 @@
 #include "LinkList.h"
 #include "DLLinkList.h"
 #include "Stack.h"
+#include "BinaryTree.h"
 
 int main(int argc, const char * argv[]) {
     
@@ -41,5 +42,15 @@ int main(int argc, const char * argv[]) {
     stack = pushLinkStack(stack, 'c');
     stack = pushLinkStack(stack, 'd');
     popLinkStack(stack);
+    
+    printf("二叉树\n");
+    BTree binaryTree;
+    createBinaryTree(&binaryTree);
+    printf("\n先序遍历二叉树\n");
+    preOrderTraversal(binaryTree);
+    printf("\n中序遍历二叉树\n");
+    inOrderTraversal(binaryTree);
+    printf("\n后序遍历二叉树\n");
+    postOrderTraversal(binaryTree);
     return 0;
 }
