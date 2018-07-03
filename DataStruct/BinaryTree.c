@@ -18,6 +18,8 @@
 
 #include "BinaryTree.h"
 
+int top = -1;       //表示栈顶元素所在的位置
+
 void createBinaryTree(BTree *tree){
     
     /**
@@ -28,26 +30,27 @@ void createBinaryTree(BTree *tree){
     
     //创建二叉树
     (*tree) = (BTree )malloc(sizeof(BTree));
+    (*tree) -> data = 1;
+    
     (*tree) -> leftChild = (BTree )malloc(sizeof(BTree));
     (*tree) -> rightChild = (BTree )malloc(sizeof(BTree));
+    (*tree) -> leftChild -> data = 2;
+    
     (*tree) -> leftChild -> leftChild = (BTree )malloc(sizeof(BTree));
     (*tree) -> leftChild -> rightChild = (BTree )malloc(sizeof(BTree));
     (*tree) -> rightChild -> leftChild  = (BTree )malloc(sizeof(BTree));
     (*tree) -> rightChild -> rightChild = (BTree )malloc(sizeof(BTree));
 
-    (*tree) -> data = 1;
-    (*tree) -> leftChild -> data = 2;
-    (*tree) -> rightChild -> data = 3;
-
     (*tree) -> leftChild -> leftChild -> data = 4;
     (*tree) -> leftChild -> leftChild -> leftChild = NULL;
     (*tree) -> leftChild -> leftChild -> rightChild = NULL;
-
+    
     (*tree) -> leftChild -> rightChild -> data = 5;
     (*tree) -> leftChild -> rightChild -> leftChild = NULL;
     (*tree) -> leftChild -> rightChild -> rightChild = NULL;
     
-  
+    (*tree) -> rightChild -> data = 3;
+    
     (*tree) -> rightChild -> leftChild -> data = 6;
     (*tree) -> rightChild -> leftChild -> leftChild = NULL;
     (*tree) -> rightChild -> leftChild -> rightChild = NULL;
@@ -93,4 +96,84 @@ void postOrderTraversal(BTree tree){
         printTreeElement(tree);
     }
     return;
+}
+
+
+#pragma mark - 非递归方式遍历二叉树
+void push(BinaryTree **stack, BinaryTree *elem){
+    
+    stack[++top] = elem;
+}
+
+void pop(){
+    
+    if (top == -1) {
+        return;
+    }
+    top--;
+}
+
+BinaryTree* getTopElement(BinaryTree **stack){
+    
+    return stack[top];
+}
+
+//先序遍历
+void preOrderNotTraversal(BTree tree){
+    
+    BinaryTree *stack[20];
+    BinaryTree *temp;
+    push(stack, tree);  //将根节点压栈
+    while (top != -1) {
+        
+        temp = getTopElement(stack);  //取栈顶元素
+        pop();                        //出栈
+        while (temp) {
+            printTreeElement(temp);
+            //如果该节点有右子树，将右子树压栈
+            if (temp -> rightChild) {
+                push(stack, temp -> rightChild);
+            }
+            //先遍历左子树，直到左子树为NULL时，跳出while循环，然后遍历右子树
+            temp = temp -> leftChild;
+        }
+    }
+    
+}
+
+//中序遍历
+void inOrderNotTraversal(BTree tree){
+    
+    BinaryTree *stack[20];
+    BinaryTree *temp;
+    push(stack, tree);
+    //top不等于-1,说明栈内不为空
+    while (top != -1) {
+        
+        while ((temp = getTopElement(stack)) && temp != NULL) {
+            //将节点的左子树进栈
+            push(stack, temp -> leftChild);
+        }
+        //跳出循环，将栈顶元素出栈
+        pop();
+        if (top != -1) {
+            temp = getTopElement(stack);
+            pop();
+            printTreeElement(temp);
+            //将节点的右孩子压栈
+            push(stack, temp -> rightChild);
+        }
+    }
+}
+
+//后序遍历
+void postOrderNotTraversal(BTree tree){
+    
+    BinaryTree *stack[20];
+    BinaryTree *temp;
+    push(stack, tree);
+    //top不等于-1,说明栈内不为空
+    while (top != -1) {
+        
+    }
 }

@@ -13,11 +13,12 @@
 #include <stdlib.h>
 
 #define StackSize   10
+typedef int ElementType;
 
 //顺序栈
 typedef struct stack {
     
-    char data[StackSize];
+    ElementType data[StackSize];
     int top;        //栈顶指针
 } SeqStack;
 

@@ -11,6 +11,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "Stack.h"
 
 typedef int ElementType;
 
@@ -21,9 +22,11 @@ typedef struct BinaryTreeNode {
     struct BinaryTreeNode *rightChild;      //右子树
 } BinaryTree;
 
-
 typedef BinaryTree *BTree;
+
+//创建二叉树
 void createBinaryTree(BTree *tree);
+//输出节点的数值
 void printTreeElement(BTree tree);
 //先序遍历
 void preOrderTraversal(BTree tree);
@@ -31,5 +34,12 @@ void preOrderTraversal(BTree tree);
 void inOrderTraversal(BTree tree);
 //后序遍历
 void postOrderTraversal(BTree tree);
+
+//先序遍历
+void preOrderNotTraversal(BTree tree);
+//中序遍历
+void inOrderNotTraversal(BTree tree);
+//后序遍历
+void postOrderNotTraversal(BTree tree);
 
 #endif /* BinaryTree_h */

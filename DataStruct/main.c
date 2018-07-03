@@ -52,5 +52,10 @@ int main(int argc, const char * argv[]) {
     inOrderTraversal(binaryTree);
     printf("\n后序遍历二叉树\n");
     postOrderTraversal(binaryTree);
+    
+    printf("\n非递归先序遍历二叉树\n");
+    preOrderNotTraversal(binaryTree);
+    printf("\n非递归中序遍历二叉树\n");
+    inOrderNotTraversal(binaryTree);
     return 0;
 }
