@@ -4,10 +4,10 @@
 //
 //  Created by Jack on 2021/7/8.
 //  Copyright © 2021 hu. All rights reserved.
+
 //
 
 #include "Sort.h"
-
 
 /**
  (1)定义两个变量low和high，将low、high分别设置为要进行排序的序列的起始元素和最后一个元素的下标。第一次，low和high的取值分别为0和n-1，接下来的每次取值由划分得到的序列起始元素和最后一个元素的下标来决定。
@@ -67,3 +67,4 @@ void quickSort(int arr[], int start, int end) {
     }
     return;
 }
+

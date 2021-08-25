@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E1F6E9A269700EA00E2D349 /* Sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 3E1F6E99269700EA00E2D349 /* Sort.c */; };
+		041354BE2302853000BC1501 /* Sort.c in Sources */ = {isa = PBXBuildFile; fileRef = 041354BD2302853000BC1501 /* Sort.c */; };
+		0445C92C230257CC00626FF2 /* Search.c in Sources */ = {isa = PBXBuildFile; fileRef = 0445C92B230257CC00626FF2 /* Search.c */; };
 		3E60088B20DF84C50090EFD3 /* BinaryTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 3E60088A20DF84C50090EFD3 /* BinaryTree.c */; };
 		3E8A550926D62BB600C15467 /* BinarySearchTree.c in Sources */ = {isa = PBXBuildFile; fileRef = 3E8A550826D62BB600C15467 /* BinarySearchTree.c */; };
 		3E8D7A7E26CDFC9500C79FFD /* RandPoke.c in Sources */ = {isa = PBXBuildFile; fileRef = 3E8D7A7D26CDFC9500C79FFD /* RandPoke.c */; };
@@ -31,8 +32,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3E1F6E98269700EA00E2D349 /* Sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
-		3E1F6E99269700EA00E2D349 /* Sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Sort.c; sourceTree = "<group>"; };
+		041354BC2302853000BC1501 /* Sort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sort.h; sourceTree = "<group>"; };
+		041354BD2302853000BC1501 /* Sort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Sort.c; sourceTree = "<group>"; };
+		0445C92A230257CC00626FF2 /* Search.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Search.h; sourceTree = "<group>"; };
+		0445C92B230257CC00626FF2 /* Search.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Search.c; sourceTree = "<group>"; };
 		3E60088920DF84C50090EFD3 /* BinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTree.h; sourceTree = "<group>"; };
 		3E60088A20DF84C50090EFD3 /* BinaryTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BinaryTree.c; sourceTree = "<group>"; };
 		3E8A550726D62BB600C15467 /* BinarySearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
@@ -94,10 +97,12 @@
 				3E60088A20DF84C50090EFD3 /* BinaryTree.c */,
 				3E8A550726D62BB600C15467 /* BinarySearchTree.h */,
 				3E8A550826D62BB600C15467 /* BinarySearchTree.c */,
-				3E1F6E98269700EA00E2D349 /* Sort.h */,
-				3E1F6E99269700EA00E2D349 /* Sort.c */,
 				3E8D7A7C26CDFC9500C79FFD /* RandPoke.h */,
 				3E8D7A7D26CDFC9500C79FFD /* RandPoke.c */,
+				0445C92A230257CC00626FF2 /* Search.h */,
+				0445C92B230257CC00626FF2 /* Search.c */,
+				041354BC2302853000BC1501 /* Sort.h */,
+				041354BD2302853000BC1501 /* Sort.c */,
 			);
 			path = DataStruct;
 			sourceTree = "<group>";
@@ -165,8 +170,10 @@
 				3EFFD47D20CBF1C4003AA7C7 /* LinkList.c in Sources */,
 				3EFFD48320CCF5A3003AA7C7 /* Stack.c in Sources */,
 				3EFFD48020CCEC26003AA7C7 /* DLLinkList.c in Sources */,
-				3E1F6E9A269700EA00E2D349 /* Sort.c in Sources */,
 				3E8D7A7E26CDFC9500C79FFD /* RandPoke.c in Sources */,
+				0445C92C230257CC00626FF2 /* Search.c in Sources */,
+				3EFFD48020CCEC26003AA7C7 /* DLLinkList.c in Sources */,
+				041354BE2302853000BC1501 /* Sort.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
