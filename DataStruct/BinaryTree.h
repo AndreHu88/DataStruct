@@ -2,7 +2,7 @@
 //  BinaryTree.h
 //  DataStruct
 //
-//  Created by 胡勇 on 2018/6/24.
+//  Created by Jack on 2018/6/24.
 //  Copyright © 2018年 hu. All rights reserved.
 //
 
